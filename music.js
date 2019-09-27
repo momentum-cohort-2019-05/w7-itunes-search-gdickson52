@@ -91,7 +91,7 @@ function initPage(){
     audio = new Audio();
     context = new (window.AudioContext || window.webkitAudioContext)();
     analyser = context.createAnalyser();
-    audio.src = ""; // the source path
+    audio.src = ""; 
     source = context.createMediaElementSource(audio);
     source.connect(analyser);
     analyser.connect(context.destination);
